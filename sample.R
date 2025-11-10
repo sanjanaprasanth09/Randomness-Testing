@@ -1,4 +1,4 @@
-pi <- readLines("C:/Users/sanja/OneDrive/Documents/60mil digits of pi.txt") #string of digits of pi
+pi <- readLines("x") #string of digits of pi
 pi_vector <- as.integer(strsplit(pi, "") [[1]])
 digits <- pi_vector[1:15000000]
 
@@ -161,5 +161,6 @@ for (i in 1:num_permutations) {
 }
 p_value <- mean(perm_stats >= obs_stat)
 print(p_value)
+
 
 
